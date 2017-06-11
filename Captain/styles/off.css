@@ -1,0 +1,38 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: black;
+  background-size:cover;
+}
+
+
+.locktime {
+  color: gray;
+  font-size: 300%;
+}
+
+.date {
+  color: gray;
+  font-size: 70%;
+}
+
+
+
+
+.bottom {
+position: fixed;
+bottom: 0;
+width: 100%;
+
+}
+
+.home {
+  background-color: none;
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+  border: 2px solid darkgray;
+  border-radius: 3px;
+}

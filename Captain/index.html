@@ -6,10 +6,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
   <link href="/os/styles/default.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="mobile-web-app-capable" content="yes">
-
 </head>
-<body id="body">
+<body id="body" onload="hideoff()">
   <div class='lockscreen' id="lockscreen">
   <div id="bborder">
   <div id="bcurrent"></div>
@@ -36,10 +34,19 @@
 
     </center>
   </div>
+  <div id='shutoff'>
+    <center>
+      <div style="height: 30%;">
+      </div>
+    <!-- <img src='os/photo/captain.png' width="100px" height="100px"> -->=
+  </center>
+  </div>
+  <div id='slider'></div>
+  <div class='bottom'><center><div class='home' onclick="location.reload()"></div></center></div>
 </body>
 
 
-<script src='os/scripts/timesystem.js'></script>
-<script src='os/scripts/battery.js'></script>
-<script src='os/scripts/sha256.js'></script>
-<script src='os/scripts/lockscreen.js'></script>
+<script src='/os/scripts/timesystem.js'></script>
+<script src='/os/scripts/battery.js'></script>
+<script src='/os/scripts/sha256.js'></script>
+<script src='/os/scripts/lockscreen.js'></script>

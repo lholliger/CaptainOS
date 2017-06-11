@@ -6,7 +6,7 @@ var io = require('socket.io')(http);
 var mkdirp = require('mkdirp');
 var port = 25555;
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/Captain/index.html');
+  res.sendFile(__dirname + '/Captain/off.html');
 });
 
 http.listen(port, function(){

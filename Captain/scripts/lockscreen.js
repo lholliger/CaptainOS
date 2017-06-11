@@ -1,9 +1,11 @@
 $.mobile.loading( "hide" );
 
-$("#lockscreen").on("swipe",function(){
+$("#slider").on("swipe",function(){
   console.log("showing");
   document.getElementById("lockscreen").style.filter = "blur(10px)";
   document.getElementById("pass").style.display = "block";
+  document.getElementById("slider").style.display = "none";
+
 });
 var finalcode = "";
 var showdisplay = "";
@@ -32,4 +34,9 @@ else if (key == "enter") {
   showdisplay += "·";
   document.getElementById("currentpassfill").innerHTML = "&nbsp;"  + showdisplay + "&nbsp;";
 }
+}
+
+function hideoff() {
+  document.getElementById("shutoff").style.display = "none";
+
 }

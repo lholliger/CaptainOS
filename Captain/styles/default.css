@@ -87,3 +87,37 @@ body {
   font-size: 250%;
   color: white;
 }
+
+#shutoff {
+  background: black;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+
+#slider {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.bottom {
+position: fixed;
+bottom: 0;
+width: 100%;
+
+}
+
+.home {
+  background-color: none;
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+  border: 2px solid darkgray;
+  border-radius: 3px;
+}
