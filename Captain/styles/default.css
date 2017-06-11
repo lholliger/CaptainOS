@@ -1,0 +1,27 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url("/os/photo/default.png");
+  background-size:cover;
+}
+
+.locktime {
+  color: white;
+  font-size: 300%;
+}
+
+.date {
+  color: white;
+  font-size: 70%;
+}
+
+
+.locker {
+    opacity: 0.1;
+    bottom: 50;
+    position: fixed;
+    color: white;
+    width: 100%;
+}
