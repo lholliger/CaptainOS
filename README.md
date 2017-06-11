@@ -17,6 +17,7 @@ node os.js
 * Install the CaptainOSViewer.apk on your Android Device
 * launch the app, and you are ready!
 
+* (current testing password is 9876)
 ## Updating
 The app is made on GitHub for ease of updating. Currently, the program requires you run git pull to get the newest updates, in the future, the system will automatically pull from GitHub when the Captain Web Services server broadcasts a new update is available
 

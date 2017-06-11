@@ -32,6 +32,7 @@ body {
 }
 
 #bborder {
+  margin: 10px;
   width: 5%;
   background-color: black;
   border: 1px solid #2b2b2b;
@@ -47,5 +48,42 @@ body {
 .precent {
   opactiy: 0.8;
   font-size: 50%;
+  color: white;
+}
+
+.password {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+ color: white;
+}
+
+.lockscreen {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.currentpassfill {
+  overflow: hidden;
+  font-size: 300%;
+  margin-right: 20%;
+  margin-left: 20%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.passbutton {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  background: none;
+  display: inline-block;
+  font-size: 250%;
   color: white;
 }

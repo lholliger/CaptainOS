@@ -1,11 +1,16 @@
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+
   <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
   <link href="/os/styles/default.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="mobile-web-app-capable" content="yes">
 
 </head>
-<body>
+<body id="body">
+  <div class='lockscreen' id="lockscreen">
   <div id="bborder">
   <div id="bcurrent"></div>
 </div>
@@ -16,10 +21,25 @@
     <h2 class='date' id='lsdate'></h2>
 
   <div class='locker'>
-    Swipe to Unlock
+    < Swipe to Unlock <
   </div>
     </center>
+  </div>
+  <div class='password' id='pass'>
+    <center>
+      <h1>Enter your Password</h1>
+      <div class="currentpassfill" id="currentpassfill">&nbsp;</div><br>
+      <button class='passbutton' onclick='lockpress(7);'>7</button><button class='passbutton' onclick='lockpress(8);'>8</button><button class='passbutton' onclick='lockpress(9);'>9</button><br>
+      <button class='passbutton' onclick='lockpress(4);'>4</button><button class='passbutton' onclick='lockpress(5);'>5</button><button class='passbutton' onclick='lockpress(6);'>6</button><br>
+      <button class='passbutton' onclick='lockpress(1);'>1</button><button class='passbutton' onclick='lockpress(2);'>2</button><button class='passbutton' onclick='lockpress(3);'>3</button><br>
+      <button class='passbutton' onclick='lockpress("back");'>&larr;</button><button class='passbutton' onclick='lockpress(0);'>0</button><button class='passbutton' onclick='lockpress("enter");'>	&#10004;</button><br>
+
+    </center>
+  </div>
 </body>
+
 
 <script src='os/scripts/timesystem.js'></script>
 <script src='os/scripts/battery.js'></script>
+<script src='os/scripts/sha256.js'></script>
+<script src='os/scripts/lockscreen.js'></script>

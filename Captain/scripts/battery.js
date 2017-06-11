@@ -1,5 +1,4 @@
 navigator.getBattery().then(function(result) {
-  console.log(result);
   document.getElementById("bcurrent").style.width = result["level"] * 100 + "%";
 
   if (result["level"] * 100 < 15) {
@@ -12,7 +11,6 @@ navigator.getBattery().then(function(result) {
 
 setInterval(function() {
   navigator.getBattery().then(function(result) {
-    console.log(result);
     document.getElementById("bcurrent").style.width = result["level"] * 100 + "%";
 
     if (result["level"] * 100 < 15) {

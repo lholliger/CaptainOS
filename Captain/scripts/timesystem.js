@@ -14,5 +14,5 @@ setInterval(function() {
   if (d.getHours() == 12 || d.getHours() == 0) {
     hour = 12;
   }
-  document.getElementById("lstime").innerHTML = hour + ":" + d.getMinutes();
+  document.getElementById("lstime").innerHTML = hour + ":" + ('0' + d.getMinutes()).slice(-2); // some from https://stackoverflow.com/questions/8513032/less-than-10-add-0-to-number
 }, 500);
