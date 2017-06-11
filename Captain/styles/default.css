@@ -9,17 +9,17 @@ body {
 
 .locktime {
   color: white;
-  font-size: 300%;
+  font-size: 500%;
 }
 
 .date {
   color: white;
-  font-size: 70%;
+  font-size: 90%;
 }
 
 
 .locker {
-    opacity: 0.1;
+    opacity: 0.3;
     bottom: 50;
     position: fixed;
     color: white;

@@ -9,16 +9,10 @@ setInterval(function() {
   var hour = d.getHours();
   if (hour > 12) {
     hour = hour - 12;
-    end = "PM";
-  } else {
-    end = "AM";
-  }
-  if (d.getHours() == 12) {
-    end = "PM";
   }
 
-  if (d.getHours() == 24) {
-    end = "AM";
+  if (d.getHours() == 12 || d.getHours() == 0) {
+    hour = 12;
   }
-  document.getElementById("lstime").innerHTML = hour + ":" + d.getMinutes() + " " + end;
+  document.getElementById("lstime").innerHTML = hour + ":" + d.getMinutes();
 }, 500);
