@@ -1,7 +1,29 @@
-   var battery = navigator.battery;
-var bat = battery.level * 100 + "%";
-document.getElementById("bcurrent").style.width = bat;
+navigator.getBattery().then(function(result) {
+  console.log(result);
+  document.getElementById("bcurrent").style.width = result["level"] * 100 + "%";
+
+  if (result["level"] < 15) {
+    document.getElementById("bcurrent").style.backgroundColor = "red";
+  }
+  if (result["charging"] == true) {
+    document.getElementById("bcurrent").style.backgroundColor = "green";
+  }
+});
+
 setInterval(function() {
-  var bat = battery.level * 100 + "%";
-  document.getElementById("bcurrent").style.width = bat;
-}, 5000);
+  navigator.getBattery().then(function(result) {
+    console.log(result);
+    document.getElementById("bcurrent").style.width = result["level"] * 100 + "%";
+
+    if (result["level"] < 15) {
+      document.getElementById("bcurrent").style.backgroundColor = "red";
+    }
+
+    if (result["charging"] == true) {
+      document.getElementById("bcurrent").style.backgroundColor = "green";
+    }
+  });
+
+
+
+}, 10000);
