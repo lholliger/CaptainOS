@@ -25,3 +25,28 @@ body {
     color: white;
     width: 100%;
 }
+
+.top {
+  opacity: 0.5;
+  color: white;
+}
+
+#bborder {
+  width: 5%;
+  background-color: black;
+  opacity: 0.2;
+  border: 1px solid white;
+}
+
+#bcurrent {
+  width: 0%;
+  height: 10px;
+  background-color: white;
+
+}
+
+.precent {
+  opactiy: 0.8;
+  font-size: 50%;
+  color: white;
+}
