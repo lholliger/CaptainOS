@@ -9,12 +9,12 @@ body {
 
 
 .locktime {
-  color: gray;
+  color: #3a3a3a;
   font-size: 300%;
 }
 
 .date {
-  color: gray;
+  color: #3a3a3a;
   font-size: 70%;
 }
 
@@ -30,9 +30,9 @@ width: 100%;
 
 .home {
   background-color: none;
-  width: 10px;
-  height: 10px;
-  margin: 3px;
-  border: 2px solid darkgray;
+  width: 13px;
+  height: 13px;
+  margin: 8px;
+  border: 2px solid #3a3a3a;
   border-radius: 3px;
 }
