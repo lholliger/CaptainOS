@@ -1,6 +1,7 @@
 $.mobile.loading( "hide" );
 
-$("#slider").on("swipe",function(){
+
+$("#slider").on("swipeleft swiperight",function(){
   console.log("showing");
   document.getElementById("lockscreen").style.filter = "blur(10px)";
   document.getElementById("pass").style.display = "block";

@@ -60,3 +60,6 @@ typings/
 # for the OS
 User
 Apps
+
+# thanks apple...
+.DS_Store

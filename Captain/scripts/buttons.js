@@ -7,3 +7,10 @@ function lockscreenmain() {
   document.getElementById("currentpassfill").innerHTML = "&nbsp;"  + showdisplay + "&nbsp;";
 
 }
+
+function homescreenmain() {
+
+}
+
+// soon-to-be editable gesures
+$('#slider').on('swipeup',function(){ window.location.replace("/");} );

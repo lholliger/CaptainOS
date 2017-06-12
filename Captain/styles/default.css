@@ -122,3 +122,14 @@ width: 100%;
   border-radius: 3px;
   opacity: 0.3;
 }
+
+.top-bar {
+  width: 100%;
+   background:rgba(255,255,255,0.1);
+   height: 15px;
+}
+
+.time {
+  color: white;
+  font-size: 90%;
+}
