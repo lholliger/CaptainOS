@@ -1,4 +1,4 @@
-/*
+
 var fs = require('fs');
 var mkdirp = require('mkdirp');
 console.log("creating user");
@@ -18,6 +18,6 @@ mkdirp(dir + "/config", function() {
 });
 
 mkdirp(__dirname + "/../../Apps");
-*/
 
-// this code is not ready and cannot be used in first testing
+
+// this code is not ready and when the system is ready, all data will be reset :/

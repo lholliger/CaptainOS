@@ -10,7 +10,7 @@ app.get('/', function(req, res){
 });
 
 http.listen(port, function(){
-  console.log('Server started. listening on port ' + port, 0);
+  console.log('Server started. listening on port ' + portsss);
 });
 
 app.use('/os/', express.static(__dirname + "/Captain/"));

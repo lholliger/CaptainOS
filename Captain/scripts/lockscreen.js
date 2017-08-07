@@ -20,7 +20,7 @@ if (key == "back") {
 else if (key == "enter") {
   if (sha256('9876') == sha256(finalcode)) {
    document.getElementById("currentpassfill").style.border = "1px solid green";
-   window.location.replace("home.html?hash=" + sha256(finalcode));
+   window.location.replace("home.html?hash=" + finalcode);
 
   } else {
     document.getElementById("currentpassfill").style.border = "1px solid red";

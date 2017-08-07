@@ -86,6 +86,8 @@ body {
   display: inline-block;
   font-size: 250%;
   color: white;
+  width:64px;
+  height: 64px;
 }
 
 #shutoff {
