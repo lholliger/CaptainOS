@@ -18,6 +18,7 @@ io.on('connection', function(socket) {
 
 });
 
+app.use('/app/', express.static(__dirname + "/Apps/"));
 
 
 function mainThread() {
