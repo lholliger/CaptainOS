@@ -41,8 +41,11 @@ function mainThread() {
 // check if user exists on this system
 if (!fs.existsSync(__dirname + "/User")) {
   console.log("useraccount doesnt exist yet!");
-  require('./Captain/setup/inituser.js')
-  mainThread();
+  fs.readFile(__dirname + "/Captain/setup/inituser.js", 'utf8', function(err, contents) {
+    eval(contents);
+
+  });
 } else {
+  console.log("running normally");
   mainThread();
 }

@@ -1,13 +1,15 @@
-
 var fs = require('fs');
 var mkdirp = require('mkdirp');
 console.log("creating user");
-mkdirp(__dirname + "/../../User");
-var dir = __dirname + "/../../User";
+mkdirp(__dirname + "/User", function() {
+var dir = __dirname + "/User";
 mkdirp(dir + "/Desktop");
 mkdirp(dir + "/Downloads");
 mkdirp(dir + "/Documents");
 mkdirp(dir + "/Photos");
+console.log("generating config");
+mkdirp(__dirname + "/Apps");
+
 mkdirp(dir + "/config", function() {
 
   var desktop = fs.openSync(dir + "/config/desktop.json", 'w');  // position of stuff on the desktop
@@ -17,11 +19,11 @@ mkdirp(dir + "/config", function() {
   var thread = fs.openSync(dir + "/config/include.json", 'w'); // stuff to add to the main thread
 
   fs.writeFile(dir + "/config/include.json", '["captain.appLauncher"]', function(err) {
-
+    mainThread();
   });
 });
+});
 
-mkdirp(__dirname + "/../../Apps");
 
-
+console.log("done");
 // this code is not ready and when the system is ready, all data will be reset :/
