@@ -59,7 +59,7 @@ typings/
 
 # for the OS
 User
-Apps
+Apps/*
 !Apps/captain.appLauncher
 
 
