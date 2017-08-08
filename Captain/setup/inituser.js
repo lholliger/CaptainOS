@@ -14,7 +14,11 @@ mkdirp(dir + "/config", function() {
   var device = fs.openSync(dir + "/config/device.json", 'w');   // device version, keys, hardware info
   var user = fs.openSync(dir + "/config/user.json", 'w');     // timezone, theme, font
   var password = fs.openSync(dir + "/config/password.json", 'w'); // hash, type
+  var thread = fs.openSync(dir + "/config/include.json", 'w'); // stuff to add to the main thread
 
+  fs.writeFile(dir + "/config/include.json", '["captain.appLauncher"]', function(err) {
+
+  });
 });
 
 mkdirp(__dirname + "/../../Apps");

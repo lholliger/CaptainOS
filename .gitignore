@@ -60,6 +60,8 @@ typings/
 # for the OS
 User
 Apps
+!Apps/captain.appLauncher
+
 
 # thanks apple...
 .DS_Store

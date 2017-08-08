@@ -135,3 +135,10 @@ width: 100%;
   color: white;
   font-size: 90%;
 }
+
+.appIframe {
+  border: 0;
+  background: 1px solid red;
+  width: 100%;
+  height: calc(100% - 45px);
+}
